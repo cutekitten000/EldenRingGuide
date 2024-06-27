@@ -1,4 +1,4 @@
-package eldenring;
+package com.example.eldenring;
 
 import java.io.Serializable;
 import java.util.List;
@@ -10,10 +10,11 @@ public class Area implements Serializable {
     private String detailedDescription;
     private String questsDescription;
 
-    public Area(String name, List<Task> tasks, String detailedDescription) {
+    public Area(String name, List<Task> tasks, String detailedDescription, String questsDescription) {
         this.name = name;
         this.tasks = tasks;
         this.detailedDescription = detailedDescription;
+        this.questsDescription = questsDescription;
     }
 
     public String getName() {
@@ -28,4 +29,7 @@ public class Area implements Serializable {
         return detailedDescription;
     }
 
+    public String getQuestsDescription() {
+        return questsDescription;
+    }
 }

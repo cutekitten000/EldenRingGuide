@@ -1,4 +1,4 @@
-package eldenring;
+package com.example.eldenring;
 
 import java.io.Serializable;
 
